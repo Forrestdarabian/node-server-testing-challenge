@@ -9,18 +9,14 @@ module.exports = {
 };
 
 function insert(toon) {
-  return (
-    db("toons")
-      .insert(toon, "id")
-      // .then(([id]) => {
-      .then(ids => {
-        const id = ids[0];
-        // const [id] = ids;
-        return db("toons")
-          .where({ id })
-          .first();
-      })
-  );
+  return db("toons")
+    .insert(toon, "id")
+    .then(ids => {
+      const id = ids[0];
+      return db("toons")
+        .where({ id })
+        .first();
+    });
 }
 
 async function update(id, changes) {

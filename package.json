@@ -1,7 +1,7 @@
 {
-  "name": "node-server-testing-guided",
+  "name": "node-server-testing-challenge",
   "version": "1.0.0",
-  "description": "Starter Code for Node Server Testing Module",
+  "description": "Forrest's code",
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
@@ -9,7 +9,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "Lambda School",
+  "author": " SchoForrest Darabian",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
